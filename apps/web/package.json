@@ -1,0 +1,26 @@
+{
+  "name": "@hg/web",
+  "private": true,
+  "version": "0.1.0",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "test:chat": "node scripts/test_chat.js"
+  },
+  "dependencies": {
+    "@openrouter/sdk": "^0.9.11",
+    "@tailwindcss/forms": "^0.5.11",
+    "marked": "^17.0.4",
+    "next": "14.0.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-native-web": "0.18.11"
+  },
+  "devDependencies": {
+    "@tailwindcss/typography": "^0.5.19",
+    "autoprefixer": "10.4.14",
+    "postcss": "8.4.24",
+    "tailwindcss": "3.4.7"
+  }
+}

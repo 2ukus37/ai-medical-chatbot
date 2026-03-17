@@ -1,0 +1,16 @@
+{
+  "name": "healthguard-monorepo",
+  "private": true,
+  "version": "0.1.0",
+  "packageManager": "pnpm@8.6.0",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev:web": "pnpm --filter @hg/web dev",
+    "dev:mobile": "pnpm --filter @hg/mobile start",
+    "build:web": "pnpm --filter @hg/web build",
+    "start:web": "pnpm --filter @hg/web start"
+  }
+}

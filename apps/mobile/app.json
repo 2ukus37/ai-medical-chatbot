@@ -1,0 +1,9 @@
+{
+  "expo": {
+    "name": "HealthGuard Mobile",
+    "slug": "hg-mobile",
+    "version": "0.1.0",
+    "platforms": ["ios", "android", "web"],
+    "assetBundlePatterns": ["**/*"]
+  }
+}

@@ -1,0 +1,28 @@
+# Dependencies
+node_modules/
+.pnpm-store/
+
+# Next.js
+apps/web/.next/
+apps/web/out/
+
+# Uploads (user files)
+apps/web/public/uploads/
+
+# Environment variables
+.env.local
+.env*.local
+
+# Logs
+*.log
+web-dev.log
+mobile-dev.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Expo
+apps/mobile/.expo/
+
+node_modules
