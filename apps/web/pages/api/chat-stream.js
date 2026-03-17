@@ -110,7 +110,7 @@ export default async function handler(req, res) {
       headers: {
         'Content-Type': 'application/json',
         'Authorization': `Bearer ${apiKey}`,
-        'HTTP-Referer': 'http://localhost:3000',
+        'HTTP-Referer': process.env.NEXT_PUBLIC_SITE_URL || 'https://ai-medical-chatbot.netlify.app',
         'X-Title': 'HealthGuard AI',
       },
       body: JSON.stringify({ model: mdl, messages: modelMessages, stream: true, max_tokens: 1500, temperature: 0.3 }),

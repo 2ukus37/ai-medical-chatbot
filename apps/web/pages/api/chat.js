@@ -31,7 +31,7 @@ async function callOpenRouter(apiKey, model, messages) {
     headers: {
       'Content-Type': 'application/json',
       'Authorization': `Bearer ${apiKey}`,
-      'HTTP-Referer': 'http://localhost:3000',
+      'HTTP-Referer': process.env.NEXT_PUBLIC_SITE_URL || 'https://ai-medical-chatbot.netlify.app',
       'X-Title': 'HealthGuard AI',
     },
     body: JSON.stringify({ model, messages, stream: false, max_tokens: 1500, temperature: 0.3 }),
